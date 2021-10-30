@@ -226,7 +226,7 @@ export default {
   name: "Quotes",
   data() {
     return {
-      url: "http://api.quotable.io",
+      url: "https://api.quotable.io",
       category: String,
       categories: Array,
       quote: "",
