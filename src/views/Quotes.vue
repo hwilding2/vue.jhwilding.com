@@ -227,7 +227,7 @@ export default {
   data() {
     return {
       url: "https://api.quotable.io",
-      category: String,
+      category: "inspirational",
       categories: Array,
       quote: "",
       author: "",
@@ -236,7 +236,6 @@ export default {
   },
   async created() {
     await this.loadCategories();
-    this.category = this.categories[0].name;
   },
   methods: {
     async loadCategories() {
@@ -259,7 +258,7 @@ export default {
     },
     async getQuote() {
       try {
-        let response = await fetch(this.url + "/random?" + this.category);
+        let response = await fetch(this.url + "/random?tags=" + this.category);
         let json = await response.json();
         this.quote = json.content;
         this.author = json.author;
