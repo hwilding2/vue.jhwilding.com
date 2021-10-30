@@ -72,7 +72,7 @@
           © 2021 Copyright:
           <a
             class="text-white"
-            href="https://github.com/hwilding2/jhwilding.com"
+            href="https://github.com/hwilding2/vue.jhwilding.com"
             >GitHub</a
           >
         </div>
