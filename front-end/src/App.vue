@@ -81,7 +81,6 @@
   </div>
 </template>
 
-
 <style>
 * {
   margin: 0;
